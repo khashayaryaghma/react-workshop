@@ -10,11 +10,21 @@ article {
   border-radius: 8px;
   display: flex;
   align-items: center;
-  gap: 3rem;
+  justify-content: space-between;
   transition: all ease-in-out 0.5s;
-  &:hover{
+  &:hover {
     transform: scale(1.05);
   }
+}
+.box1 {
+  display: flex;
+  align-items: center;
+  gap: 3rem;
+}
+.box2 {
+  display: flex;
+  align-items: center;
+  gap: 1rem;
 }
 .rank {
   font-size: 1.25rem;
