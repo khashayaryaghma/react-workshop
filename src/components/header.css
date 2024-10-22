@@ -1,0 +1,27 @@
+header {
+  box-shadow: 0px 1px 5px gray;
+  padding: 0.75rem 2rem;
+  display: flex;
+  align-items: center;
+  gap: 2rem;
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  background-color: #fafafa;
+  z-index: 999;
+}
+.logo {
+  width: 3.5rem;
+}
+.navLink {
+  text-decoration: none;
+  color: black;
+  font-weight: 700;
+}
+ul {
+  list-style: none;
+  display: flex;
+  gap: 2rem;
+  font-size: 1rem;
+}
