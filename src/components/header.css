@@ -9,6 +9,7 @@ header {
   left: 0;
   right: 0;
   background-color: #fafafa;
+  z-index: 999;
 }
 .logo {
   width: 3.5rem;
@@ -16,6 +17,8 @@ header {
 .navLink {
   text-decoration: none;
   color: black;
+  font-weight: 700;
+  
 }
 ul {
   list-style: none;

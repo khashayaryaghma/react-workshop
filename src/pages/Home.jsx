@@ -1,5 +1,6 @@
 import { useEffect, useState } from "react";
 import "./home.css";
+import Card from "../components/Card";
 
 function Home() {
   const [data, setData] = useState([]);
@@ -13,12 +14,19 @@ function Home() {
         setData(currencyData.data);
       });
   }, []);
-
-  return (
-    <main>
-      <div className="container">jjty</div>
-    </main>
-  );
+  if (data.length === 0) {
+    return <h1 style={{ marginTop: "9rem", textAlign: "center",height:"66.5vh" }}>Loading...</h1>;
+  } else {
+    return (
+      <main>
+        <div className="container">
+          {data.map((item, i) => (
+            <Card key={i} item={item} />
+          ))}
+        </div>
+      </main>
+    );
+  }
 }
 
 export default Home;

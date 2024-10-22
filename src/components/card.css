@@ -1,0 +1,26 @@
+.symbol {
+  font-weight: 600;
+  font-size: 1.25rem;
+}
+article {
+  background-color: #4c2c59;
+  color: #f5e8da;
+  padding: 3rem 2rem;
+  cursor: pointer;
+  border-radius: 8px;
+  display: flex;
+  align-items: center;
+  gap: 3rem;
+  transition: all ease-in-out 0.5s;
+  &:hover{
+    transform: scale(1.05);
+  }
+}
+.rank {
+  font-size: 1.25rem;
+  border: 1px solid #f5e8da;
+  width: 2rem;
+  display: flex;
+  justify-content: center;
+  border-radius: 5px;
+}

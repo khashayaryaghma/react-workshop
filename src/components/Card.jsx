@@ -3,9 +3,10 @@ import "./card.css";
 function Card({ item }) {
   return (
     <article>
-      <h3>
-        <span>{item.symbol}</span> | <span>{item.name}</span>
-      </h3>
+      <span className="rank">{item.rank}</span>
+      <h4>
+        <span className="symbol">{item.symbol}</span> | <span>{item.name}</span>
+      </h4>
     </article>
   );
 }
