@@ -1,6 +1,19 @@
 import "./header.css";
 
 function Header() {
+  const navItems = [
+    {
+      route: "/",
+      title: "Home",
+      id: 141241,
+    },
+    {
+      route: "/contact",
+      title: "Contact",
+      id: 145454745,
+    },
+  ];
+
   return (
     <header>
       <a href="/">
@@ -8,16 +21,13 @@ function Header() {
       </a>
       <nav>
         <ul>
-          <li>
-            <a href="/" className="navLink">
-              Home
-            </a>
-          </li>
-          <li>
-            <a href="/contact" className="navLink">
-              Contact
-            </a>
-          </li>
+          {navItems.map((item) => (
+            <li key={item.route}>
+              <a href={item.route} className="navLink">
+                {item.title}
+              </a>
+            </li>
+          ))}
         </ul>
       </nav>
     </header>
