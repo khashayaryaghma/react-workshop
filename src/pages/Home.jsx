@@ -2,6 +2,7 @@ import { useEffect, useState } from "react";
 import "./home.css";
 import Card from "../components/Card";
 import Hero from "../components/Hero";
+import { Link } from "react-router-dom";
 
 function Home() {
   const [data, setData] = useState([]);
@@ -23,7 +24,9 @@ function Home() {
         <Hero />
         <div className="container">
           {data.map((item, i) => (
-            <Card key={i} item={item} />
+            <Link key={i} to={`/currency/${item.id}`} style={{ textDecoration: "none" }}>
+              <Card item={item} />
+            </Link>
           ))}
         </div>
       </main>
