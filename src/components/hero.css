@@ -1,0 +1,25 @@
+.fBox {
+  max-width: 40rem;
+  display: flex;
+  flex-direction: column;
+  gap: 1.5rem;
+  align-items: start;
+}
+section {
+  display: flex;
+  align-items: center;
+  margin-bottom: 7rem;
+}
+.image {
+  max-width: 35rem;
+  height: auto;
+  border-radius: 1rem;
+}
+button {
+  padding: 0.5rem 1rem;
+  color: #fafafa;
+  border: none;
+  background-color: #4c2c59;
+  cursor: pointer;
+  border-radius: 8px;
+}
