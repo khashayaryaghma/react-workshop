@@ -2,6 +2,7 @@ import { useEffect, useState } from "react";
 import "./home.css";
 import Card from "../components/Card";
 import Hero from "../components/Hero";
+import Contact from "../components/Contact";
 
 function Home() {
   const [data, setData] = useState([]);
@@ -26,6 +27,7 @@ function Home() {
               <Card item={item} key={i}/>
           ))}
         </div>
+        <Contact/>
       </main>
     );
   }
