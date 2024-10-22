@@ -21,11 +21,17 @@ function Contact() {
   }
   return (
     <>
-      <h2 style={{ margin: "3rem 0" }}>Contact Us</h2>
-      <form onSubmit={handleSubmit}>
+      <form style={{ margin: "3rem 0" }} onSubmit={handleSubmit}>
+        <h2 style={{ color: "#fff", textAlign: "center" }}>Contact Us</h2>
         <Input value={formData.name} onChange={handleChange} name="name" placeholder="Name" />
         <Input value={formData.name} onChange={handleChange} name="email" placeholder="Email" />
-        <textarea value={formData.message} onChange={handleChange} name="message" placeholder="Message" style={{ resize: "none" }}></textarea>
+        <textarea
+          value={formData.message}
+          onChange={handleChange}
+          name="message"
+          placeholder="Message"
+          style={{ resize: "none", padding: "1rem 0.5rem", fontSize: "1rem", border: "none", borderRadius: "8px" }}
+        ></textarea>
       </form>
     </>
   );
