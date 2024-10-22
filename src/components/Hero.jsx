@@ -10,7 +10,7 @@ function Hero() {
           Lorem ipsum dolor sit, amet consectetur adipisicing elit. Nostrum, laborum perferendis nobis illum officiis repellendus quod vitae ipsa. Cupiditate
           recusandae ea sunt earum molestiae eligendi?
         </p>
-        <button>Go to Market</button>
+        <button>Contact Us</button>
       </div>
       <div className="sBox">
         <img src="https://business.fiu.edu/magazine/spring-2022/img/cryptocurrency.jpg" className="image" alt="img" />
